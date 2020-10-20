@@ -25,7 +25,6 @@ if gastos<0
 end
 
 if n_usuarios==n_usuarios_premium+n_usuarios_gratuitos
-
     if precio>=0 && n_usuarios_premium>=0 && n_usuarios_gratuitos>=0 && gastos>=0
         utilidad_sin_impuestos=(precio*2*n_usuarios_premium) - gastos
         if utilidad_sin_impuestos>0
@@ -33,7 +32,6 @@ if n_usuarios==n_usuarios_premium+n_usuarios_gratuitos
         elsif 
             utilidad=utilidad_sin_impuestos
         end
-        
     end
     puts "La Utilidad es #{utilidad}"
 elsif 
